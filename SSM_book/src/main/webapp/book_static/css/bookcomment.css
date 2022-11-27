@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    /*font-family: 'Josefin Sans' sans-serif;*/
+}
+
+body {
+    background: #F0F0F0;
+}
+
+
+.book_comment {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.book_comment_div {
+    width: 90%;
+    background: white;
+    /*background: white;*/
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 25px 20px rgb(0, 0, 0, 0);
+}
+
+/*用户评论中的头像*/
+.book_comment_div_img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    float: left;
+}
+
+
+/*用户评论中的时间*/
+.book_comment_div_time {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
+    float: left;
+    /*border: 1px solid black;*/
+}
+
+/*用户评论*/
+.book_comment_div_comment {
+    margin-top: 5%;
+    /*float: right;*/
+    /*border: 1px solid black;*/
+}
+
+
+/*用户发表评论*/
+.book_comment_speak_div {
+    width: 100%;
+    height: auto;
+    margin-top: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+}
+
+
+.book_comment_speak {
+    width: 90%;
+    background: #F0F0F0;
+    /*background: white;*/
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 25px 20px rgb(0, 0, 0, 0);
+}
+
+.book_comment_speak textarea {
+    width: 100%;
+    height: 80px;
+    border: none;
+    /*border-radius: 30px;*/
+}
+
+.book_comment_speak button {
+    font-size: 18px;
+    /*border: none;*/
+    background: white;
+}
+
+.book_comment_speak a {
+    color: black;
+}

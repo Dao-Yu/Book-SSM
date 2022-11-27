@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feng.dao.ShowMapper">
+
+    <!--查询书本的评论-->
+    <resultMap id="selectbookcomment" type="com.feng.entity.UserEntity">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="userimg" property="userimg"></result>
+
+        <collection property="comment" javaType="List" ofType="com.feng.entity.BookcommentEntity">
+            <result column="comment" property="comment"></result>
+            <result column="commenttime" property="commenttime"></result>
+            <result column="bookid" property="bookid"></result>
+        </collection>
+    </resultMap>
+    <select id="selectbookcomment_user" resultMap="selectbookcomment">
+        SELECT u.id,u.username,u.userimg,bcomment.comment,bcomment.commenttime,bcomment.bookid
+        FROM bookcomment bcomment
+        LEFT JOIN USER u ON bcomment.userid=u.id WHERE bcomment.bookid=#{bookid}
+    </select>
+
+    <!--查询用户的动态-->
+    <resultMap id="selectdynamicissue" type="com.feng.entity.UserEntity">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="userimg" property="userimg"></result>
+
+        <collection property="dynamicissueEutityList" javaType="List" ofType="com.feng.entity.UserDynamicissueEutity">
+            <result column="dynamictime" property="dynamictime"></result>
+            <result column="dynamictype" property="dynamictype"></result>
+            <result column="dynamicimage" property="dynamicimage"></result>
+        </collection>
+    </resultMap>
+    <select id="selectDynamicissue" resultMap="selectdynamicissue">
+        SELECT u.id,u.username,u.userimg,d.dynamictime,d.dynamictype,dynamicimage
+        FROM dynamicissue d
+        LEFT JOIN USER u ON d.userid=u.id
+    </select>
+
+
+</mapper>

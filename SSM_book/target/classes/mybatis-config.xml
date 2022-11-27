@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 开启log4J日志 -->
+        <setting name="logImpl" value="LOG4J"/>
+        <!-- 开启驼峰命名转换:Table{create_time} -> Entity{createTime} -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!--mybatis分页-->
+<!--    <plugins>-->
+<!--        &lt;!&ndash; com.github.pagehelper为PageHelper类所在包名 &ndash;&gt;-->
+<!--        <plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+<!--            &lt;!&ndash; 使用MySQL方言的分页 &ndash;&gt;-->
+<!--            <property name="helperDialect" value="mysql"/>&lt;!&ndash;如果使用mysql，这里value为mysql&ndash;&gt;-->
+<!--            <property name="pageSizeZero" value="true"/>-->
+<!--        </plugin>-->
+<!--    </plugins>-->
+</configuration>

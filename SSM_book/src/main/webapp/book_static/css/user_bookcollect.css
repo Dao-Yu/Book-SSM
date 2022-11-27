@@ -1,0 +1,118 @@
+/*用户收藏类开始*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    /*font-family: 'Josefin Sans' sans-serif;*/
+}
+
+body {
+    background: #F0F0F0;
+}
+
+.heade_userbookcollect01, .heade_userbookcollect02 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    /*background: red;*/
+}
+
+/*收藏的一句话*//*收藏的书*/
+.user_collect_sentence, .user_collect_books {
+    width: 90%;
+    background: white;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 25px 20px rgb(0, 0, 0, 0);
+    margin-top: 10px;
+}
+
+/*收藏的一句话*/
+.user_collect_sentence form table tr td ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+.user_collect_sentence form table tr td ul li::after {
+    content: "";
+    /*background: #f44566;*/
+    background: #aef7ff;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.user_collect_sentence form table tr td ul li:hover {
+    color: black;
+}
+
+.user_collect_sentence form table tr td ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+
+/*取消收藏按钮样式*/
+.user_collect_sentence form table tr td ul li button {
+    width: 100px;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*收藏的书*/
+.user_collect_books table tr td {
+    width: 35%;
+    height: auto;
+    /*border: 1px solid black;*/
+}
+
+.user_collect_books table {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.user_collect_books table tr td img {
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 20px;
+}
+
+.user_collect_books table tr td p {
+    text-align: center;
+}
+
+.user_collect_books table tr td span, p {
+    font-size: 18px;
+}
+
+
+/*用户收藏类结束*/
+
+.user_collect_sentence_span {
+    color: #777;
+    font-size: 18px;
+}

@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    /*弹性布局，让页面元素垂直+水平居中*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /*让页面始终占浏览器可视区域总高度*/
+    /*height: 100vh;*/
+    background: #F0F0F0;
+}
+
+/*logo样式*/
+.logo {
+    width: 100%;
+    height: 65px;
+    background-color: #d5b294;
+}
+
+.logo a {
+    font-size: 46px;
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+/*整个用户注册框*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*让页面始终占浏览器可视区域总高度*/
+    height: 80vh;
+}
+
+.rigsht {
+    /*弹性布局，让页面元素垂直+水平居中*/
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 25px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    margin: auto;
+}
+
+.rigsht h2 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.rigsht .rigsht_box {
+    position: relative;
+    width: 100%;
+}
+
+.rigsht .rigsht_box input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+
+.rigsht .rigsht_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: black;
+    /*默认是auto，这个元素可以被点击，none则不行*/
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.rigsht .rigsht_box input:focus + label,
+.rigsht .rigsht_box input:valid + label {
+    top: -20px;
+    color: #798794;
+    font-size: 12px;
+}
+
+.rigsht_a {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    padding: 10px 20px;
+    color: black;
+    font-size: 18px;
+    background-color: #9ec1d0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.rigsht_box span {
+    color: red;
+}
