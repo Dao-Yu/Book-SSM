@@ -21,59 +21,7 @@
     <script src="layui/layui.js"></script>
 </head>
 <body>
-<!--商品列表-->
-<%--<div class="table_box">--%>
-<%--    <table>--%>
-<%--        <thead>--%>
-<%--        <tr>--%>
-<%--            <th>商品id</th>--%>
-<%--            <th>商品名称</th>--%>
-<%--            <th>作者</th>--%>
-<%--            <th>商品图片</th>--%>
-<%--            <th>商品海报</th>--%>
-<%--            <th>商品价格</th>--%>
-<%--            <th>商品类型</th>--%>
-<%--            <th>商品库存</th>--%>
-<%--            <th>商品简介</th>--%>
-<%--            <th>商品上架时间</th>--%>
-<%--            <th>商品状态</th>--%>
-<%--            <th>被收藏数</th>--%>
-<%--            <th>操作</th>--%>
-<%--        </tr>--%>
-<%--        </thead>--%>
-<%--        <tbody>--%>
-<%--        <c:forEach items="${AdminCommodity}" var="adminCommodity">--%>
-<%--            <tr>--%>
-<%--                <td>${adminCommodity.id}</td>--%>
-<%--                <td>${adminCommodity.bookname}</td>--%>
-<%--                <td>${adminCommodity.bookauthor}</td>--%>
-<%--                <td>--%>
-<%--                    <img src="${adminCommodity.imgUrl}" width="120px" height="150px">--%>
-<%--                </td>--%>
-<%--                <td>--%>
-<%--                    <img src="${adminCommodity.imgUrl2}" width="250px">--%>
-<%--                </td>--%>
-<%--                <td>${adminCommodity.bookprice}</td>--%>
-<%--                <td>${adminCommodity.booktype}</td>--%>
-<%--                <td>${adminCommodity.bookamount}</td>--%>
-<%--                <td>${adminCommodity.booksynopsis}</td>--%>
-<%--                <td>${adminCommodity.booktime}</td>--%>
-<%--                <td>${adminCommodity.bookstate}</td>--%>
-<%--                <td>${adminCommodity.bookCollection}</td>--%>
-<%--                <td>--%>
-<%--                    <a href="#">--%>
-<%--                        <button class="Popout_Update" onclick="update_user('${adminCommodity.id}')">修改</button>--%>
-<%--                    </a>--%>
-<%--                    <a href="#">--%>
-<%--                        <button class="Popout_Delete" onclick="delete_user('${adminCommodity.id}')">删除</button>--%>
-<%--                    </a>--%>
-<%--                </td>--%>
-<%--            </tr>--%>
-<%--        </c:forEach>--%>
 
-<%--        </tbody>--%>
-<%--    </table>--%>
-<%--</div>--%>
 <table class="layui-hide" id="test" lay-filter="test"></table>
 
 
